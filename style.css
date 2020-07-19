@@ -272,6 +272,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
 }
 .s-header h1{
     font-family: var(--font-1);
@@ -279,6 +281,7 @@ header {
     color: #56ab2f;
     border-bottom: solid .3rem;
     margin-bottom: 1.5rem;
+    border-color: #AB2EA5;
 }
 
 .k-header{
@@ -320,13 +323,13 @@ header {
 .projects{
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 3rem;
 }
 
 .card{
     width: 20rem;
     height: 30rem;
     position: relative;
-
 }
 
 .card-img-wrapper{
@@ -340,22 +343,112 @@ header {
     height: 100%;
     border-radius: .6rem;
     opacity: .9;
-    background-color: #dad6d6;
+    background-color: #eee;
 
+}
+.card:hover .card-img-wrapper{
+    opacity: 1;
+    background-color: rgba(0,0,0,1);
+    border-radius: .6rem;
 }
 
 .card-info{
     position: absolute;
     bottom: 0;
     padding: 3rem;
+    text-shadow: 0.3rem 0.3rem 0.6rem rgba(0,0,0,0.6);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .6s;
 
 }
-
-.s-header h1{
+.first-card-text{
+    position: absolute;
+    bottom: 0;
+    padding: 3rem;
+    text-shadow: 0 0.1rem 0.8rem 0.5rem rgba(56, 95, 64, 0.7);
+    opacity: 2;
+    visibility: visible;
+    margin-bottom: 6rem;
+    text-align: center;
     font-family: var(--font-1);
-    font-size: 3.2rem;
-    color: #56ab2f;
-    border-bottom: solid .3rem;
-    margin-bottom: 1.5rem;
+    color: #f8f6f6;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding-left: 5rem;
+    transition: all .7s;
+}
+.card-info h2{
+    font-family: var(--font-1);
+    color: #f8f6f6;
+    font-size: 2.6rem;
+    font-weight: 600;
+}
+.card-info h3{
+    font-family: var(--font-3);
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: #AB2EA5;
+    margin-bottom: 1rem;
+    
 }
 
+.card-info p{
+    font-family: var(--font-2);
+    font-size: 1rem;
+    color: #f8f6f6;
+    margin-bottom: 2rem;
+}
+
+.card-info button{
+    width: 7.6rem;
+    height: 2rem;
+    background: #56ab2f;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8abe4a, #56ab2f);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8abe4a, #56ab2f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #eee;
+    border-radius: .3rem;
+    border: none;
+    box-shadow: 0 0.1rem .8rem rgba(0,0,0,0.4);
+}
+
+.card:hover .card-info{
+    opacity: 2;
+    visibility: visible;
+    
+}
+
+.card:hover .first-card-text{
+    opacity: 0;
+    visibility: hidden;
+    
+}
+
+.contact-session{
+    width: 100%;
+    height: 100vh;
+    background-color: #272727;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-wrapper{
+    width: 60%;
+    height: 30rem;
+    display: flex;
+    box-shadow: 0 1.5rem 2.5rem rgba(0,0,0,0.4);
+}
+
+.contact-left{
+    width: 35%;
+    background: linear-gradient(rgba(233,233,233,0.6), rgba(0,0,0, 0.5)), url(imagens/mail-img.jpg);
+    background-size: cover;
+}
+
+.contact-right{
+    width: 65%;
+    background-color: #eee;
+    padding: 1rem 3rem 3rem 3rem;
+
+}

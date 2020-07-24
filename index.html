@@ -160,7 +160,7 @@
                 <div class="contact-wrapper">
                     <div class="contact-left"></div>
                     <div class="contact-right">
-                        <h1>Contato</h1>
+                            <h1>Contato</h1>
                         <form action="">
                             <div class="input-group">
                                 <input type="text"class="field" id="name">
@@ -179,6 +179,32 @@
                     </div>
                 </div>
             </div>
+        </section>
+        <section class="budget">
+            <div class="budget-wrapper">
+                <h1>Seu orçamento</h1>
+                <form>
+                    <label for="qnt">Quantidade de paginas</label>
+                    <input type="number" min="1" name="qnt" id="qnt">
+                    <label for="js">preciso de um script JS</label>
+                    <input type="checkbox" name="js" id="js">
+                    <label>Layout para o site</label>
+                    <div class="group-layout">
+                        <div>
+                            <input type="radio" name="layout" id="layout-yes">
+                            <label for="layout-yes">Preciso de um layout</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="layout" id="layout-no">
+                            <label for="layout-no">não preciso de um layout</label>
+                        </div>
+                    </div>
+                    <label for="deadline">prazo</label>
+                    <input type="range" name="deadline" id="deadline">
+                    <button class="button-edit button-budget" type="submit">Enviar</button>
+                </form> 
+            </div>
+
         </section>
     </div>
 </body>

@@ -595,6 +595,16 @@ header {
     font-size: 1.1rem;
 }
 
+.check {
+    cursor:pointer;
+    position: absolute;
+    background-color: #eee;
+}
+
+.check input:checked {
+    background-color: #56ab2f;
+}
+
 footer{
     width: 100%;
     height: 10rem;

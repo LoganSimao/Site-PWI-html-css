@@ -188,6 +188,7 @@
                     <input type="number" min="1" name="qnt" id="qnt">
                     <label for="js">preciso de um script JS</label>
                     <input type="checkbox" name="js" id="js">
+                    <span class="check"></span>
                     <label>Layout para o site</label>
                     <div class="group-layout">
                         <div>
@@ -200,7 +201,8 @@
                         </div>
                     </div>
                     <label for="deadline">prazo</label>
-                    <input type="range" name="deadline" id="deadline">
+                    <input type="range" name="deadline" id="deadline" min="1" max="10">
+                    <label id=price>R$ 0,00</label>
                     <button class="button-edit button-budget" type="submit">Enviar</button>
                 </form> 
             </div>
